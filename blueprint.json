@@ -5,11 +5,9 @@
 		"explanation": "An application blueprint for defining an AWS container service"
 	},
 	"compute_service": {
-		"default": {
-			"identifier": "container_service"
-		}
+		"identifier": "container_service"
 	},
-	"resources": {
+	"dimensions": {
 		"cpus": 10,
 		"memory": 256
 	},

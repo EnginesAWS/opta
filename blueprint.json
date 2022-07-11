@@ -16,11 +16,25 @@
 			"container_port": 80,
 			"host_port": 80
 		}
-	],	
+	],
 	"binding_target": {
 		"configuration": {
 			"desired_count": 3,
 			"essential": true
- 		}
-	}
+		}
+	},
+	"resources": [		
+		{
+			"type": "load_balancer_target_group",
+			"configuration": {
+			"identifier" : "abs-tg"
+			}
+		},{
+			"type": "subnet",
+			"identifier": "subnet_abs",
+			"configuration": {
+				"cidr_block": "10.111.10.0/24"
+			}
+		}
+	]
 }

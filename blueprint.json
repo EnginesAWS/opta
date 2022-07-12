@@ -27,7 +27,8 @@
 		{
 			"type": "load_balancer_target_group",
 			"configuration": {
-			"identifier" : "abs-tg"
+			"identifier" : "abs-tg",
+			"port": 80
 			}
 		},{
 			"type": "subnet",

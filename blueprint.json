@@ -26,13 +26,13 @@
 	"resources": [		
 		{
 			"type": "load_balancer_target_group",
+			"identifier" : "opta-tg",
 			"configuration": {
-			"identifier" : "abs-tg",
 			"port": 80
 			}
 		},{
 			"type": "subnet",
-			"identifier": "subnet_abs",
+			"identifier": "subnet_opta",
 			"configuration": {
 				"cidr_block": "10.111.10.0/24"
 			}

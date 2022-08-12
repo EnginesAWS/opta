@@ -23,17 +23,38 @@
 			"essential": true
 		}
 	},
-	"resources": [		
+	"resources": [
+		{
+			"type": "container_task_definition",
+			"identifier": "opta"
+		},
+		{
+			"type": "load_balancer",
+			"identifier": "opta",
+			"configuration": {
+				"subnets": [
+					"subnet_a",
+			    		"subnet_b"
+				],
+				"security_groups": [
+					"security_group"
+				]
+			}
+		},
 		{
 			"type": "load_balancer_target_group",
-			"identifier" : "opta-tg",
+			"identifier": "opta",
 			"configuration": {
-			"vpc_binding" : "vpc",
-			"port": 80
+				"port": 80
 			}
-		},{
+		},
+		{
+			"type": "load_balancer_listener",
+			"identifier": "opta"
+		},
+		{
 			"type": "subnet",
-			"identifier": "subnet_opta",
+			"identifier": "opta",
 			"configuration": {
 				"cidr_block": "10.111.10.0/24"
 			}

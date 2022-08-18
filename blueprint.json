@@ -4,54 +4,15 @@
 		"title": "AWS Container Service",
 		"explanation": "An application blueprint for defining an AWS container service"
 	},
-	"compute_service": {
-		"identifier": "container_service"
-	},
-	"dimensions": {
-		"cpus": 10,
-		"memory": 256
-	},
-	"ports": [
+	"bindings": [
 		{
-			"container_port": 80,
-			"host_port": 80
+			"type": "embed",
+			"target": {
+				"repository": "https://github.com/EnginesAWS/container-service-infrastructure"
+			}
 		}
 	],
-	"binding_target": {
-		"configuration": {
-			"desired_count": 3,
-			"essential": true
-		}
-	},
 	"resources": [
-		{
-			"type": "container_task_definition",
-			"identifier": "opta"
-		},
-		{
-			"type": "load_balancer",
-			"identifier": "opta",
-			"configuration": {
-				"subnets": [
-					"subnet_a",
-			    		"subnet_b"
-				],
-				"security_groups": [
-					"security_group"
-				]
-			}
-		},
-		{
-			"type": "load_balancer_target_group",
-			"identifier": "opta",
-			"configuration": {
-				"port": 80
-			}
-		},
-		{
-			"type": "load_balancer_listener",
-			"identifier": "opta"
-		},
 		{
 			"type": "subnet",
 			"identifier": "opta",

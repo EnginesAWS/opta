@@ -11,14 +11,5 @@
 				"repository": "https://github.com/EnginesAWS/container-service-infrastructure"
 			}
 		}
-	],
-	"resources": [
-		{
-			"type": "subnet",
-			"identifier": "opta",
-			"configuration": {
-				"cidr_block": "10.111.10.0/24"
-			}
-		}
 	]
 }

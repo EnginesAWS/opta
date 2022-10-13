@@ -11,5 +11,11 @@
 				"repository": "https://github.com/EnginesAWS/container-service-infrastructure"
 			}
 		}
+	],
+	"ports": [
+		{
+			"container_port": 80,
+			"host_port": 80
+		}
 	]
 }

@@ -17,5 +17,14 @@
 			"container_port": 80,
 			"host_port": 80
 		}
+	],
+	"resources": [
+		{
+			"type": "subnet",
+			"identifier": "opta",
+			"configuration": {
+				"cidr_block": "10.111.10.0/24"
+			}
+		}
 	]
 }

@@ -21,9 +21,16 @@
 	"resources": [
 		{
 			"type": "subnet",
-			"identifier": "opta",
+			"identifier": "^^blueprint_identifier^^_a",
 			"configuration": {
-				"cidr_block": "10.111.10.0/24"
+				"cidr_block": "10.111.80.0/24"
+			}
+		},
+		{
+			"type": "subnet",
+			"identifier": "^^blueprint_identifier^^_b",
+			"configuration": {
+				"cidr_block": "10.111.180.0/24"
 			}
 		}
 	]

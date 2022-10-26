@@ -1,5 +1,5 @@
 {
-	"identifier": "container-service",
+	"identifier": "opta",
 	"about": {
 		"title": "AWS Container Service",
 		"explanation": "An application blueprint for defining an AWS container service"
